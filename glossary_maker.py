@@ -5,21 +5,21 @@ import copy
 from googletrans import Translator
 from httpcore import SyncHTTPProxy
 
-Special_Characters_in_XAML_Content = ['<', '>', '\r', '\n']
-Special_Characters_in_XAML_Content_Values = ['&lt;', '&gt;', '&#13;', '&#10;']
-Forbidden_Characters_in_XAML_Key = ['"', "'", *Special_Characters_in_XAML_Content]
-Forbidden_Characters_in_XAML_Key_Values = ['&quot;', '&apos;', *Special_Characters_in_XAML_Content_Values]
+Special_Marks_in_XAML_Content = ['&', '<', '>', '\r', '\n']
+Special_Characters_in_XAML_Content = ['&amp;', '&lt;', '&gt;', '&#13;', '&#10;']
+Forbidden_Characters_in_XAML_Key = ['"', "'", *Special_Marks_in_XAML_Content]
+Forbidden_Characters_in_XAML_Key_Values = ['&quot;', '&apos;', *Special_Characters_in_XAML_Content]
 
 
-def Special_Characters_in_XAML_to_Normal(string: str) -> str:
-    for i in range(len(Special_Characters_in_XAML_Content)):
-        string = string.replace(Special_Characters_in_XAML_Content_Values[i], Special_Characters_in_XAML_Content[i])
+def Special_Marks_to_Characters_in_XAML(string: str) -> str:
+    for i in range(len(Special_Marks_in_XAML_Content)):
+        string = string.replace(Special_Characters_in_XAML_Content[i], Special_Marks_in_XAML_Content[i])
     return string
 
 
-def Normal_to_Special_Characters_in_XAML(string: str) -> str:
-    for i in range(len(Special_Characters_in_XAML_Content)):
-        string = string.replace(Special_Characters_in_XAML_Content[i], Special_Characters_in_XAML_Content_Values[i])
+def Characters_to_Special_Marks_in_XAML(string: str) -> str:
+    for i in range(len(Special_Marks_in_XAML_Content)):
+        string = string.replace(Special_Marks_in_XAML_Content[i], Special_Characters_in_XAML_Content[i])
     return string
 
 
@@ -47,12 +47,12 @@ class glossary:
                 lines.append(row)
         key_column_index = 0
         en_column_index = 1
-        self.keys = [line[key_column_index].replace('"', '') for line in lines]
-        self.english_words = [line[en_column_index] for line in lines]
+        self.keys = [Forbidden_Characters_in_XAML_Key_convert(line[key_column_index]) for line in lines]
+        self.english_words = [Special_Marks_to_Characters_in_XAML(line[en_column_index]) for line in lines]
         for col in range(len(lines[0])):
             if col == key_column_index or col == en_column_index:
                 continue
-            self.columns.append([line[col] for line in lines])
+            self.columns.append([Special_Marks_to_Characters_in_XAML(line[col]) for line in lines])
 
     def save_csv(self, csv_file_name: str, encoding: str = 'utf-8'):
         lines = []
@@ -70,7 +70,7 @@ class glossary:
                     continue
                 # 没有内容时才进行翻译
                 if column[row] == '':
-                    txt = translator.translate(Special_Characters_in_XAML_to_Normal(self.english_words[row]), dest=column[self.ROW_LANG_CODE_GOOGLE]).text
+                    txt = translator.translate(Special_Marks_to_Characters_in_XAML(self.english_words[row]), dest=column[self.ROW_LANG_CODE_GOOGLE]).text
                     column[row] = txt
                 else:
                     column[row] = ''
@@ -95,13 +95,13 @@ class glossary:
         for lang in langs:
             code = lang[self.ROW_LANG_CODE_ISO]
             name = lang[self.ROW_LANG_NAME]
-            xaml_file_name = code + '.xaml'
+            xaml_file_name = (code + '.xaml').lower()
             with open(xaml_file_name, 'w', encoding=encoding, newline='') as f:
                 f.write('<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">\r\n')
                 if "language_name" not in self.keys:
                     f.write('    <s:String x:Key="language_name">' + name + '</s:String>\r\n')
                 for row in range(len(self.keys)):
-                    f.write('    <s:String x:Key="' + Forbidden_Characters_in_XAML_Key_convert(self.keys[row]) + '">' + Normal_to_Special_Characters_in_XAML(lang[row]) + '</s:String>\r\n')
+                    f.write('    <s:String x:Key="' + self.keys[row] + '">' + Characters_to_Special_Marks_in_XAML(lang[row]) + '</s:String>\r\n')
                 f.write('</ResourceDictionary>')
             file_list.append(xaml_file_name)
             pass
@@ -128,6 +128,7 @@ if __name__ == '__main__':
 
     g = glossary()
     g.load_csv(CSV_FILE_NAME + '.csv')
+    g.save_csv(CSV_FILE_NAME + '.csv')
 
     http_proxy = SyncHTTPProxy((b'http', b'127.0.0.1', 1080, b''))
     proxies = {'http': http_proxy, 'https': http_proxy}

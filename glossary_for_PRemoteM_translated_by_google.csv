@@ -230,18 +230,22 @@ Environment variables,Environment variables,,,Variables d'environnement,,環境�
 Add environment variables,Add environment variables,,,Ajouter des variables d'environnement,,環境変数を追加する
 Selected,Selected,,,Choisi,,選択済み
 Custom,Custom,,,,,カスタム
-write permissions alert,We don't have write permissions for the `{0}` directory!&#13;&#10;Please try:&#13;&#10;1. `run as administrator`&#13;&#10;2. change directory/file permissions &#13;&#10;3. move PRemoteM to another folder,,"Wir haben keine Schreibrechte für das Verzeichnis `{0}`!
+write permissions alert,"We don't have write permissions for the `{0}` directory!
+Please try:
+1. run as administrator
+2. change directory or file permissions 
+3. move PRemoteM to another folder",,"Wir haben keine Schreibrechte für das Verzeichnis `{0}`!
 Bitte versuche:
-1. „Als Administrator ausführen“.
-2. Verzeichnis-/Dateiberechtigungen ändern
+1. als Administrator ausführen
+2. Verzeichnis- oder Dateiberechtigungen ändern
 3. Verschieben Sie PRemoteM in einen anderen Ordner","Nous n'avons pas les droits d'écriture pour le répertoire `{0}` !
 S'il vous plaît essayez:
-1. ""Exécuter en tant qu'administrateur""
-2. modifier les autorisations de répertoire/fichier
+1. exécuter en tant qu'administrateur
+2. modifier les autorisations de répertoire ou de fichier
 3. déplacer PRemoteM dans un autre dossier",,"`{0}`ディレクトリへの書き込み権限がありません！
 してみてください：
-1.`管理者として実行`
-2.ディレクトリ/ファイルのアクセス許可を変更します
+1.管理者として実行
+2.ディレクトリまたはファイルのアクセス許可を変更します
 3.PRemoteMを別のフォルダーに移動します"
 Follow system,Follow system(Supported server: Windows Server 2012 R2 and above),,,,,システムに従ってください（サポートされているサーバー：Windows Server 2012 R2以降）
 Scale,Scale,,Skala,Échelle,,規模

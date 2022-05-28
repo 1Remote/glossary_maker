@@ -230,7 +230,19 @@ Environment variables,Environment variables,环境变量,Umgebungsvariablen,,Var
 Add environment variables,Add environment variables,添加环境变量,Fügen Sie Umgebungsvariablen hinzu,,Adicionar variáveis de ambiente,
 Selected,Selected,选中,Ausgewählt,,Selecionado,
 Custom,Custom,定制,Benutzerdefiniert,Coutume,Personalizado,
-write permissions alert,We don't have write permissions for the `{0}` directory!&#13;&#10;Please try:&#13;&#10;1. `run as administrator`&#13;&#10;2. change directory/file permissions &#13;&#10;3. move PRemoteM to another folder,我们没有路径 `{0}` 的写入权限！&#13;&#10;请尝试用以下方法修复问题：&#13;&#10;1. 使用管理员权限运行程序&#13;&#10;2. 修改路径的权限设置 &#13;&#10;3. 将 PRemoteM 移动到其他目录,,,"Não temos permissões de gravação para o diretório `{0}`!&#13;&#10;Por favor, tente:&#13;&#10;1. `Executar como administrador`&#13;&#10;2. Alterar as permissões de diretório/arquivo &#13;&#10;3. Mover o PREmoteM para outra pasta",
+write permissions alert,"We don't have write permissions for the `{0}` directory!
+Please try:
+1. run as administrator
+2. change directory or file permissions 
+3. move PRemoteM to another folder","我们没有路径 `{0}` 的写入权限！
+请尝试用以下方法修复问题：
+1. 使用管理员权限运行程序
+2. 修改路径的权限设置 
+3. 将 PRemoteM 移动到其他目录",,,"Não temos permissões de gravação para o diretório `{0}`!
+Por favor, tente:
+1. `Executar como administrador`
+2. Alterar as permissões de diretório/arquivo 
+3. Mover o PREmoteM para outra pasta",
 Follow system,Follow system(Supported server: Windows Server 2012 R2 and above),跟随系统(服务器要求Windows Server 2012 R2及以上),Folgen des Systems(Unterstützter Server: Windows Server 2012 R2 und höher),Suivre le système(Serveur pris en charge: Windows Server 2012 R2 et supérieur),Seguir o sistema (Servidor Compatível com Windows Server 2012 R2 e superior),
 Scale,Scale,缩放,,,Tamanho,
 tag_tooltips,Left click : set this tag as filter{0}Ctrl + Left click : add this tag to the include list {0}Ctrl + Right click : add this tag to the exclude list,鼠标左键: 筛选出该标签{0}Ctrl + 鼠标左键 : 将该标签添加到筛选列表 {0}Ctrl + 鼠标右键 : 将该标签添加到排除列表,,,Clique com o botão esquerdo : defina esta tag como filtro{0}Ctrl + clique com o botão esquerdo : adicione esta tag à lista de inclusão {0}Ctrl + clique com o botão direito : adicione esta tag à lista de exclusão,
