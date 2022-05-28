@@ -1,22 +1,31 @@
 import csv
+from math import fabs
 import os
 import copy
 from googletrans import Translator
 from httpcore import SyncHTTPProxy
 
-Special_Characters_in_XAML_Keys = ['&', '<', '>', '\r', '\n']
-Special_Characters_in_XAML_Values = ['&amp;', '&lt;', '&gt;', '&#13;', '&#10;']
+Special_Characters_in_XAML_Content = ['<', '>', '\r', '\n']
+Special_Characters_in_XAML_Content_Values = ['&lt;', '&gt;', '&#13;', '&#10;']
+Forbidden_Characters_in_XAML_Key = ['"', "'", *Special_Characters_in_XAML_Content]
+Forbidden_Characters_in_XAML_Key_Values = ['&quot;', '&apos;', *Special_Characters_in_XAML_Content_Values]
 
 
-def XamlReturnToNormalReturn(string: str) -> str:
-    for i in range(len(Special_Characters_in_XAML_Keys)):
-        string = string.replace(Special_Characters_in_XAML_Values[i], Special_Characters_in_XAML_Keys[i])
+def Special_Characters_in_XAML_to_Normal(string: str) -> str:
+    for i in range(len(Special_Characters_in_XAML_Content)):
+        string = string.replace(Special_Characters_in_XAML_Content_Values[i], Special_Characters_in_XAML_Content[i])
     return string
 
 
-def NormalReturnToXamlReturn(string: str) -> str:
-    for i in range(len(Special_Characters_in_XAML_Keys)):
-        string = string.replace(Special_Characters_in_XAML_Keys[i], Special_Characters_in_XAML_Values[i])
+def Normal_to_Special_Characters_in_XAML(string: str) -> str:
+    for i in range(len(Special_Characters_in_XAML_Content)):
+        string = string.replace(Special_Characters_in_XAML_Content[i], Special_Characters_in_XAML_Content_Values[i])
+    return string
+
+
+def Forbidden_Characters_in_XAML_Key_convert(string: str) -> str:
+    for i in range(len(Forbidden_Characters_in_XAML_Key)):
+        string = string.replace(Forbidden_Characters_in_XAML_Key[i], Forbidden_Characters_in_XAML_Key_Values[i])
     return string
 
 
@@ -61,8 +70,8 @@ class glossary:
                     continue
                 # 没有内容时才进行翻译
                 if column[row] == '':
-                    txt = translator.translate(XamlReturnToNormalReturn(self.english_words[row]), dest=column[self.ROW_LANG_CODE_GOOGLE]).text
-                    column[row] = NormalReturnToXamlReturn(txt)
+                    txt = translator.translate(Special_Characters_in_XAML_to_Normal(self.english_words[row]), dest=column[self.ROW_LANG_CODE_GOOGLE]).text
+                    column[row] = txt
                 else:
                     column[row] = ''
 
@@ -82,17 +91,31 @@ class glossary:
 
     def save_to_xaml(self, encoding: str = 'utf-8'):
         langs = [self.english_words, *self.columns]
+        file_list = []
         for lang in langs:
             code = lang[self.ROW_LANG_CODE_ISO]
             name = lang[self.ROW_LANG_NAME]
             xaml_file_name = code + '.xaml'
             with open(xaml_file_name, 'w', encoding=encoding, newline='') as f:
                 f.write('<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">\r\n')
-                f.write('    <s:String x:Key="language_name">' + name + '</s:String>\r\n')
+                if "language_name" not in self.keys:
+                    f.write('    <s:String x:Key="language_name">' + name + '</s:String>\r\n')
                 for row in range(len(self.keys)):
-                    f.write('    <s:String x:Key="' + self.keys[row] + '">' + lang[row] + '</s:String>\r\n')
+                    f.write('    <s:String x:Key="' + Forbidden_Characters_in_XAML_Key_convert(self.keys[row]) + '">' + Normal_to_Special_Characters_in_XAML(lang[row]) + '</s:String>\r\n')
                 f.write('</ResourceDictionary>')
+            file_list.append(xaml_file_name)
             pass
+
+        with open("LanguagesList.cs", 'w', encoding=encoding, newline='') as f:
+            f.write('''
+public static class LanguagesResources
+{
+    public static readonly string[] Files = new string[]
+    {
+#REPLACEMENT#
+    };
+}
+'''.replace('#REPLACEMENT#', '        "' + '",\r\n        "'.join(file_list) + '"'))
 
     def clone(self):
         return copy.deepcopy(self)
