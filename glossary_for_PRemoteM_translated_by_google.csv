@@ -1,0 +1,248 @@
+﻿key,en-us,zh-cn,de-de,fr-fr,pt-br,ja-jp
+language_code-ISO,en-US,zh-CN,de-DE,fr-FR,pt-BR,ja-JP
+language_code-google,en,zh-CN,de,fr,pt,ja
+language_name,English (en-US),简体中文 (zh-CN),Deutsch (de-DE),Français (fr-FR),Portuguese (pt-BR),日本語(ja-JP)
+messagebox_title_warning,PRemoteM Warning,,,,,
+messagebox_title_error,PRemoteM Error,,,,,
+messagebox_title_info,PRemoteM Info,,,,,
+OK,OK,,,,,
+Exit,Exit,,,,,出口
+Close,Close,,,,,近い
+Add,Add,,,,,追加
+Edit,Edit,,,,,編集
+Save,Save,,,,,保存
+Save as...,Save as...,,,,,名前を付けて保存...
+Back,Back,,,,,戻る
+Delete,Delete,,,,,消去
+Cancel,Cancel,,,,,キャンセル
+Select,Select,,,,,選択する
+Explore to...,Explore to...,,Entdecken Sie ...,,,探索して...
+Previous,Previous,,,,,前
+Next,Next,,,,,次
+Done,Done,,,,,終わり
+Reset,Reset,,,,,リセット
+Import,Import,,Importieren,,,輸入
+Export,Export,,Export,,,書き出す
+Name,Name,,Name,,,名前
+File Name,File Name,,,,,ファイル名
+Test,Test,,Prüfen,Test,,テスト
+Reconnect,Reconnect,,,,,再接続
+Dismiss,Dismiss,,,,,解散
+Lock,Lock,,,,,ロック
+Always on top,Always on top,,Immer oben,,,常にトップに
+Close all,Close all,,,,,すべて閉じる
+Rename,Rename,,,,,名前を変更
+Connect,Connect,,,,,接続
+Connect (New window),Connect (New window),,,,,接続（新しいウィンドウ）
+Note,Note,,,,,ノート
+Share,Share,,Teilen,Partager,Compartilhar,シェア
+Copy,Copy,,Kopieren,Copie,cópia de,コピー
+filter_mainwindow,Keywords or '#' + tag name,,,,,キーワードまたは「＃」+タグ名
+Search (Ctrl+F),Search (Ctrl + F),,,,,検索（Ctrl + F）
+hotkey_already_registered,Hot key already registered,,,,,ホットキーはすでに登録されています
+hotkey_registered_fail,Failed to register the hot key,,,,,ホットキーの登録に失敗しました
+string_permission_denied,Permission denied,,,,,アクセス拒否
+All,All,,,,,全て
+Protocol,Protocol,,,Protocole,,プロトコル
+file_transmit_host_list_header_last_update,Last update,,,,,最後の更新
+file_transmit_host_list_header_type,Type,,,Taper,,タイプ
+file_transmit_host_list_header_size,Size,,,,,サイズ
+file_transmit_host_message_preview_over_size,"This item is over 1 MB, are you sure you want to open it?",,,,,このアイテムは1MBを超えていますが、開いてもよろしいですか？
+file_transmit_host_message_files_download_to,Please select a folder to save to,,,,,保存先のフォルダを選択してください
+file_transmit_host_message_files_download_to_dir,Use this folder,,,,,このフォルダを使用する
+file_transmit_host_message_select_files_to_upload,Please select files to upload,,,,,アップロードするファイルを選択してください
+file_transmit_host_command_refresh,Refresh (F5),,,,,更新（F5）
+file_transmit_host_command_create_folder,Create a folder,,,,,フォルダを作成する
+file_transmit_host_command_upload,Upload (Ctrl + V),,,,,アップロード（Ctrl + V）
+file_transmit_host_command_select_files_upload,Select files to upload,,,,,アップロードするファイルを選択します
+file_transmit_host_command_select_folder_upload,Select a folder to upload,,,,,アップロードするフォルダを選択してください
+file_transmit_host_command_delete,Delete (Del),,,,,削除（削除）
+file_transmit_host_command_save_to,Save to... (Ctrl + S),,,,,保存先...（Ctrl + S）
+file_transmit_host_warning_same_names_title,Replace or cancel,,,,,交換またはキャンセル
+file_transmit_host_warning_same_names,The destination has {0} file(s) with the same name(s). Do you want to continue?,,,,,宛先に同じ名前の{0}ファイルがあります。続けたいですか？
+host_reconecting_info,Reconnecting...,,,,,再接続しています...
+Options,Options,,,Choix,,オプション
+About,About,,,,,約
+Toggle Cards/List,Toggle Cards/List,,,,,カード/リストの切り替え
+system_options_general_title,General,,,,,全般的
+Language,Language,,,,,言語
+Startup,Startup,,,,,起動
+system_options_general_start_when_win_login,Run automatically at OS startup,,,,,OSの起動時に自動的に実行
+system_options_general_start_minimized,Start minimized,,,,,最小化を開始
+Confirm before closing,Confirm before closing,,,,,終了する前に確認してください
+system_options_general_log_file_path,Log file,,,,,ログファイル
+system_options_quick_description,"Quick connect allows you to open up a quick connection bar via a hot key, then you can type the keyword and start connection by pressing the Enter key",,,,,クイック接続を使用すると、ホットキーを介してクイック接続バーを開くことができます。次に、キーワードを入力し、Enterキーを押して接続を開始できます。
+system_options_quick_match_providers,Keyword-Matchers,,Keyword-Matcher,,,キーワードマッチャー
+Launcher,Launcher,,,,,ランチャー
+system_options_quick_launcher_enable,Enable the launcher,,,,,ランチャーを有効にする
+system_options_quick_launcher_hotkey,Hot key,,,,,ホットキー
+system_options_data_security_title,Data & Security,,,,,データセキュリティ
+system_options_data_security_database,Database,,,,,データベース
+system_options_data_security_database_migrate,Migrate,,,,,移行する
+system_options_data_security_rsa_title,RSA encryption,,,,,RSA暗号化
+system_options_data_security_rsa_encrypt,Encrypt,,,,,暗号化
+system_options_data_security_rsa_encrypt_dialog_title,Load an old key or select a path to save your current key,,,,,古いキーをロードするか、パスを選択して現在のキーを保存します
+system_options_data_security_rsa_decrypt,Decrypt,,,,,復号化
+system_options_data_security_rsa_public_key,Public key,,,,,公開鍵
+system_options_data_security_rsa_private_key_path,Private key path,,,,,秘密鍵のパス
+system_options_data_security_export_dialog_title,Caution: Your data will be saved unencrypted!,,,,,注意：データは暗号化されずに保存されます！
+system_options_data_security_info_data_processing,Processing data. Do not close the app!,,,,,データを処理しています。アプリを閉じないでください！
+system_options_data_security_info_encrypt_private_key_warning,Protect your private key carefully! It's the only key that can decrypt your data!,,,,,秘密鍵は慎重に保護してください。それはあなたのデータを解読できる唯一の鍵です！
+system_options_data_security_info_clear_rsa,Would you like to clear RSA encryption?,,,,,RSA暗号化をクリアしますか？
+system_options_data_security_error_can_not_open,Database: Permission denied for reading or the file is not a database or the file is an encrypted database!,,,,,データベース：読み取りの許可が拒否されたか、ファイルがデータベースではないか、ファイルが暗号化されたデータベースです！
+string_database_error_permission_denied,Database: Permission denied for reading! Please check your password of db or the file occupation.,,,,,データベース：読み取りの許可が拒否されました！ dbのパスワードまたはファイルの職業を確認してください。
+string_database_error_rsa_private_key_format_error,Database: RSA private key is in an invalid format! Please select the correct key.,,,,,データベース：RSA秘密鍵の形式が無効です！正しいキーを選択してください。
+string_database_error_rsa_private_key_not_found,Database: Can't find the RSA private key! Please select the correct key.,,,,,データベース：RSA秘密鍵が見つかりません！正しいキーを選択してください。
+string_database_error_rsa_private_key_not_match,Database: RSA private key does not match the public key! Please select the correct key.,,,,,データベース：RSA秘密鍵が公開鍵と一致しません！正しいキーを選択してください。
+Theme,Theme,,,,,テーマ
+Color,Color,,,,,色
+Color1,Color1,,,,,Color1
+Color2,Color2,,,,,Color2
+Background,Background,,,,,バックグラウンド
+Normal,Normal,,Normal,Normal,Normal,普通
+Lighter,Lighter,,,,,ライター
+Darker,Darker,,,,,暗い
+Font,Font,,,,,フォント
+Font size,Font size,,,,,フォントサイズ
+Themes,Themes,,,,,テーマ
+server_card_operate_duplicate,Duplicate,,,,,複製
+server_card_operate_copy_address,Copy hostname to clipboard,,,,,ホスト名をクリップボードにコピー
+server_card_operate_copy_username,Copy username to clipboard,,,,,ユーザー名をクリップボードにコピー
+server_card_operate_copy_password,Copy password to clipboard,,,,,パスワードをクリップボードにコピーする
+confirm_to_delete,Are you sure you want to delete?,,,,,消去してもよろしいですか？
+confirm_to_delete_selected,Are you sure you want to delete all selected?,,,,,選択したものをすべて削除してもよろしいですか？
+import_server_dialog_title,Select a file,,,,,ファイルを選択
+import_from_json,from json,,,,,jsonから
+import_from_csv,from mRemoteNG csv,,,,,mRemoteNGcsvから
+import_done_0_items_added,"Imported successfully, {0} item(s) added.",,,,,正常にインポートされ、{0}アイテムが追加されました。
+import_failure_with_data_format_error,Error data format!,,,,,エラーデータ形式！
+server_editor_different_options,<different options>,,<verschiedene Optionen>,,,<さまざまなオプション>
+server_editor_bulk_editing,Bulk editing,,Massenbearbeitung,,,一括編集
+server_editor_bulk_editing_title,You are editing in bulk:,,Sie bearbeiten in großen Mengen:,,,一括編集しています：
+server_editor_multi_selected_count,Number of selected items:,,Anzahl der ausgewählten Artikel:,,,選択したアイテムの数：
+server_editor_group_title_common,Common,,,,,一般
+Connection,Connection,,,Lien,,繋がり
+server_editor_group_title_display,Display,,,,,画面
+server_editor_group_title_advantage,Advantage,,,,,アドバンテージ
+server_editor_group_title_gateway,RD Gateway Server,,,,,RDゲートウェイサーバー
+Tags,Tags,,,Mots clés,,タグ
+server_editor_tags_tag,"Can enter multiple, separated by ','",,"Kann mehrere eingeben, getrennt durch ','",,,'、'で区切って複数入力できます
+Logo,Logo,,Logo,Logo,,ロゴ
+server_editor_cmd_before_connected,Before cmd,,,,,cmdの前
+server_editor_cmd_before_connected_tag,Run before connecting by cmd.exe (e.g. 'C:\openVpn.bat' will run 'cmd.exe C:\openVpn.bat'),,,,,cmd.exeで接続する前に実行します（例：「C：\openVpn.bat」は「cmd.exeC：\ openVpn.bat」を実行します）
+server_editor_cmd_after_disconnected,After cmd,,,,,cmd後
+server_editor_cmd_after_disconnected_tag,Run after disconnecting by cmd.exe (e.g. 'C:\closeVpn.bat' will run 'cmd.exe C:\closeVpn.bat'),,,,,cmd.exeで切断した後に実行します（例：「C：\closeVpn.bat」は「cmd.exeC：\ closeVpn.bat」を実行します）
+Hostname,Hostname,,Hostname,Nom d'hôte,,ホスト名
+Target,Target,,Ziel,,Alvo,目標
+Port,Port,,Hafen,Port,,ポート
+User,User,,,,,ユーザー
+Password,Password,,,,,パスワード
+Use private key,Use private key,,,,,秘密鍵を使用する
+Private key,Private key,,,,,秘密鍵
+Open SFTP when connected,Open SFTP when connected,,,,,接続時にSFTPを開く
+server_editor_display_full_screen_flag,Full screen remote desktop,,,,,フルスクリーンリモートデスクトップ
+server_editor_display_full_screen_flag_window,Disable,,,,,無効にする
+server_editor_display_full_screen_flag_full_screen,Enable (single monitor),,,,,有効にする（単一モニター）
+server_editor_display_full_screen_flag_all_screens,Enable (multi monitors),,,,,有効にする（マルチモニター）
+Display the connection bar when use the full screen,Display the connection bar when use the full screen,,,,,フルスクリーンを使用するときに接続バーを表示する
+New session always use full screen,New session always use full screen,,,,,新しいセッションは常にフルスクリーンを使用します
+New session use full screen if the last session is full screen,New session use full screen if the last session is full screen,,,,,最後のセッションがフルスクリーンの場合、新しいセッションはフルスクリーンを使用します
+Resolution,Resolution,,,,,解像度
+Fit to window,Fit to window(Supported server: Windows Server 2012 R2 and above),,,,,ウィンドウに合わせる（サポートされているサーバー：Windows Server 2012 R2以降）
+Custom resolution (stretch),Custom resolution (stretch),,,,,カスタム解像度（ストレッチ）
+Custom resolution (fixed),Custom resolution (fixed),,,,,カスタム解像度（固定）
+Full-screen resolution (stretch),Full-screen resolution (stretch),,,,,フルスクリーン解像度（ストレッチ）
+Full-screen resolution (fixed),Full-screen resolution (fixed),,,,,フルスクリーン解像度（固定）
+server_editor_display_rdp_performance,Performance,,,Performance,atuação,パフォーマンス
+server_editor_display_rdp_performance_auto,Auto (judged based on connection speed),,,,,自動（接続速度に基づいて判断）
+server_editor_display_rdp_performance_high,High (32bit color with full feature support),,,,,高（フル機能をサポートする32ビットカラー）
+server_editor_display_rdp_performance_middle,Middle (16bit color with only font smoothing and desktop composition),,,,,ミドル（フォントスムージングとデスクトップ構成のみの16ビットカラー）
+server_editor_display_rdp_performance_low,Low (8bit color with no feature support),,,,,低（機能をサポートしない8ビットカラー）
+server_editor_advantage_admin,For administering a server,,Zur Verwaltung eines Servers,Pour administrer un serveur,,サーバーの管理用
+server_editor_advantage_resources,Resources,,,,,資力
+server_editor_advantage_clipboard,Clipboard,,,,,クリップボード
+server_editor_advantage_key_combinations,Key Combinations,,,,,キーの組み合わせ
+server_editor_advantage_disk_drives,Disk Drives,,,,,ディスクドライブ
+server_editor_advantage_sounds,Sounds,,,,,音
+server_editor_advantage_sounds_disabled,Disabled,,Deaktiviert,,,無効
+server_editor_advantage_sounds_on_local,Play on local,,Lokal spielen,,,ローカルでプレイ
+server_editor_advantage_sounds_on_remote,Play on remote,,Spielen Sie auf der Fernbedienung,,,リモートで再生
+server_editor_advantage_audio_capture,Audio Capture,,,,,オーディオキャプチャ
+server_editor_advantage_ports,Ports,,Häfen,Ports,,ポート
+server_editor_advantage_printers,Printers,,,,,プリンター
+server_editor_advantage_smart_cards,Smart Cards,,,,,スマートカード
+server_editor_advantage_ssh_version,SSH Version,,SSH-Version,,,SSHバージョン
+server_editor_advantage_ssh_startup_auto_command,Auto command,,,,,自動コマンド
+server_editor_advantage_ssh_startup_auto_kitty_session_tip,Use external configuration by selecting a session file path for KiTTY,,,,,KiTTYのセッションファイルパスを選択して、外部構成を使用します
+server_editor_advantage_sftp_startup_path,Startup path,,,,,スタートアップパス
+server_editor_gateway_mode,Connection,,,Lien,,繋がり
+server_editor_gateway_mode_automatically_detect,Automatically detect RD Gateway Server settings,,,,,RDゲートウェイサーバーの設定を自動的に検出する
+server_editor_gateway_mode_use_these,Use the following RD Gateway Server settings,,,,,次のRDゲートウェイサーバー設定を使用します
+server_editor_gateway_mode_do_not_use,Do not use RD Gateway Server,,,,,RDゲートウェイサーバーを使用しないでください
+server_editor_gateway_server_host_name,Host Name,,,,,ホスト名
+server_editor_gateway_logon_method,Logon Method,,,,,ログオン方法
+server_editor_gateway_logon_method_psw,Password,,,,,パスワード
+server_editor_gateway_logon_method_smart_card,Smart Card,,,,,スマートカード
+server_editor_gateway_bypass_gateway_for_local_address,Bypass RD Gateway Server for local address,,,,,ローカルアドレスのRDゲートウェイサーバーをバイパスする
+server_editor_remote_app_name,App Name,,,,,アプリ名
+server_editor_remote_app_name_tag,Name of the app (e.g. hello),,,,,アプリの名前（例：hello）
+server_editor_remote_app_fullname,App Path,,,,,アプリパス
+server_editor_remote_app_fullname_tag,Full exe path on the server (e.g. C:\Apps\hello.exe),,,,,サーバー上の完全なexeパス（例：C：\ Apps \ hello.exe）
+about_page_how_to_use,How to use,,,,,使い方
+about_page_feedback,Feedback,,Feedback,,,フィードバック
+guidance_introduce,PRemoteM allows you to open a remote session at any time and anywhere.,,,,,PRemoteMを使用すると、いつでもどこでもリモートセッションを開くことができます。
+guidance_feature_launcher_key,call the launcher by,,,,,ランチャーを呼び出す
+guidance_feature_launcher_select,select item by,,,,,でアイテムを選択
+guidance_feature_launcher_connect,connect by,,,,,接続する
+guidance_feature_launcher_menu,menu by,,,,,メニュー
+guidance_feature_tab_demo,"Dragable, tearable, dockable remote session for RDP, SSH, VNC, sFTP...",,,,,RDP、SSH、VNC、sFTPのドラッグ可能、ティアリング可能、ドッキング可能なリモートセッション...
+guidance_feature_start_setting1,Please confirm some settings before first use.,,,,,初めて使用する前に、いくつかの設定を確認してください。
+guidance_feature_start_setting2,You are able to change this setting later in Options.,,,,,この設定は、後で[オプション]で変更できます。
+word_oops,Oops...,,,Oops...,,おっとっと...
+error_report_unexpected_error_occurred,Unexpected error occurred. Error info is shown below:,,,,,予期しないエラーが発生しました。エラー情報を以下に示します。
+error_report_to_clipboard,Copy to clipboard,,,,,クリップボードにコピー
+error_report_please_help_us_improve,Please help us improve PRemoteM by reporting this error.,,,,,このエラーを報告して、PRemoteMの改善にご協力ください。
+error_report_how_help_us_improve,Simply copy the error message and choose a way to report it.,,,,,エラーメッセージをコピーして、報告する方法を選択するだけです。
+error_report_send_by_email,Send by e-mail,,,,,メールで送る
+error_report_send_by_github,Send by GitHub,,,,,GitHubで送信
+logo_selector_open_file_dialog_title,select a picture,,,,,写真を選択
+Default,Default,,Standard,,,デフォルト
+Exe path,Exe path,,Exe-Pfad,Chemin exe,,エグゼパス
+Cmd parameter,CMD parameter,,CMD-Parameter,,,CMDパラメータ
+New runner,New runner,,,,,新しいランナー
+New runner name,New runner name,,,,,新しいランナー名
+Can not be empty!,Can not be empty!,,Kann nicht leer sein!,Ne peux pas être vide!,,空にすることはできません！
+Hosting,Hosting,,,,,ホスティング
+Hosting this exe in PRemoteM tab view?,Hosting this exe in PRemoteM tab windowView?,,Hosten Sie diese exe-Datei in der PRemoteM-Registerkarte windowView?,Hébergement de cet exe dans l'onglet PRemoteM windowView ?,,このexeをPRemoteMタブwindowViewでホストしますか？
+Caution: some exe can not be hosted in PRemoteM.,"Caution: some exe can not be hosted by PRemoteM, please test by your self.",,,"Attention : certains exe ne peuvent pas être hébergés par PRemoteM, veuillez tester par vous-même.",,注意：一部のexeはPRemoteMでホストできません。自分でテストしてください。
+Show environment variables,Show environment variables,,,Afficher les variables d'environnement,,環境変数を表示する
+How to select the specified monitors,How to select the specified monitors,,,Comment sélectionner les moniteurs spécifiés,,指定したモニターの選び方
+mstsc.exe mode,mstsc.exe mode,,mstsc.exe-Modus,mode mstsc.exe,,mstsc.exeモード
+Enabled,Enabled,,,,,有効
+"In this mode RDP will start the session in the way mstsc.exe xxxx.rdp in CMD, it can offer more custom parameters.","In this mode RDP will start the session in the way 'mstsc.exe xxxx.rdp' in CMD, it can offer more custom parameters.",,"In diesem Modus startet RDP die Sitzung auf die Art 'mstsc.exe xxxx.rdp' in CMD, es kann mehr benutzerdefinierte Parameter anbieten.","Dans ce mode, RDP démarrera la session de la manière 'mstsc.exe xxxx.rdp' dans CMD, il peut offrir plus de paramètres personnalisés.",,このモードでは、RDPはCMDの「mstsc.exexxxx.rdp」の方法でセッションを開始し、より多くのカスタムパラメーターを提供できます。
+Note: This mode will be automatically enabled if there are 2+ monitors with different display scaling on your PC and you selected the full screen mode.,Note: This mode will be automatically enabled if there are 2+ monitors with different display scaling on your PC and you selected the full screen mode.,,"Hinweis: Dieser Modus wird automatisch aktiviert, wenn mehr als 2 Monitore mit unterschiedlicher Anzeigeskalierung auf Ihrem PC vorhanden sind und Sie den Vollbildmodus ausgewählt haben.",Remarque : Ce mode sera automatiquement activé s'il y a plus de 2 moniteurs avec une mise à l'échelle d'affichage différente sur votre PC et que vous avez sélectionné le mode plein écran.,,注：このモードは、PCに表示スケーリングが異なる2台以上のモニターがあり、フルスクリーンモードを選択した場合に自動的に有効になります。
+Additional settings,Additional settings,,Zusätzliche Einstellungen,Paramètres additionnels,,追加の設定
+Helper,Helper,,Helfer,Assistant,,ヘルパー
+Preview,Preview,,Vorschau,Aperçu,,プレビュー
+Preview rdp file,Preview rdp file,,Vorschau der RDP-Datei,Prévisualiser le fichier rdp,,rdpファイルのプレビュー
+Check monitor number,Check monitor number,,Überprüfen Sie die Monitornummer,Vérifier le numéro du moniteur,,モニター番号を確認してください
+Environment variables,Environment variables,,,Variables d'environnement,,環境変数
+Add environment variables,Add environment variables,,,Ajouter des variables d'environnement,,環境変数を追加する
+Selected,Selected,,,Choisi,,選択済み
+Custom,Custom,,,,,カスタム
+write permissions alert,We don't have write permissions for the `{0}` directory!&#13;&#10;Please try:&#13;&#10;1. `run as administrator`&#13;&#10;2. change directory/file permissions &#13;&#10;3. move PRemoteM to another folder,,Wir haben keine Schreibrechte für das Verzeichnis `{0}`!&#13;&#10;Bitte versuche:&#13;&#10;1. „Als Administrator ausführen“.&#13;&#10;2. Verzeichnis-/Dateiberechtigungen ändern&#13;&#10;3. Verschieben Sie PRemoteM in einen anderen Ordner,"Nous n'avons pas les droits d'écriture pour le répertoire `{0}` !&#13;&#10;S'il vous plaît essayez:&#13;&#10;1. ""Exécuter en tant qu'administrateur""&#13;&#10;2. modifier les autorisations de répertoire/fichier&#13;&#10;3. déplacer PRemoteM dans un autre dossier",,`{0}`ディレクトリへの書き込み権限がありません！&#13;&#10;してみてください：&#13;&#10;1.`管理者として実行`&#13;&#10;2.ディレクトリ/ファイルのアクセス許可を変更します&#13;&#10;3.PRemoteMを別のフォルダーに移動します
+Follow system,Follow system(Supported server: Windows Server 2012 R2 and above),,,,,システムに従ってください（サポートされているサーバー：Windows Server 2012 R2以降）
+Scale,Scale,,Skala,Échelle,,規模
+tag_tooltips,Left click : set this tag as filter{0}Ctrl + Left click : add this tag to the include list {0}Ctrl + Right click : add this tag to the exclude list,,Linksklick : Dieses Tag als Filter festlegen{0}Strg + Linksklick : Dieses Tag zur Einschlussliste hinzufügen {0}Strg + Rechtsklick : Dieses Tag zur Ausschlussliste hinzufügen,Clic gauche : définir ce tag comme filtre{0}Ctrl + clic gauche : ajouter ce tag à la liste d'inclusion {0}Ctrl + clic droit : ajouter ce tag à la liste d'exclusion,,左クリック：このタグをフィルターに設定{0} Ctrl +左クリック：このタグを包含リストに追加{0} Ctrl +右クリック：このタグを除外リストに追加
+Are you sure you want to close the connection?,Are you sure you want to close the connection?,,,,,接続を閉じてもよろしいですか？
+"Hi there,","Hi there,",,"Hi,","Bonjour à tous,",,やあ、
+"I hope that you find this app useful. If you would like to support my work, you can buy me a coffee or give a nice review. Thanks!","I hope that you find this app useful. If you would like to support my work, you can buy me a coffee or give a nice review. Thanks!",,"Ich hoffe, dass Sie diese App nützlich finden. Wenn Sie meine Arbeit unterstützen möchten, können Sie mir einen Kaffee spendieren oder eine nette Bewertung abgeben. Vielen Dank!","J'espère que vous trouverez cette application utile. Si vous souhaitez soutenir mon travail, vous pouvez m'offrir un café ou donner une belle critique. Merci!",,このアプリがお役に立てば幸いです。私の仕事をサポートしたい場合は、私にコーヒーを買うか、素敵なレビューをしてください。ありがとう！
+Give suggestions,Give suggestions,,Geben Sie Anregungen,Faire des suggestions,,提案をする
+Buy a coffee,Buy a coffee,,Kaffee kaufen,Acheter un café,,コーヒーを買う
+Give nice review,Give nice review,,Geben Sie eine schöne Bewertung ab,Donnez une belle critique,,素敵なレビューを
+Do not show this again in current version,Do not show this again in current version,,In der aktuellen Version nicht mehr anzeigen,Ne plus l'afficher dans la version actuelle,,現在のバージョンではこれを再度表示しないでください
+User profile,User profile,,,,,ユーザープロファイル
+Portable mode,Portable mode,,,,,ポータブルモード
+Profile is saved where executable is located,Profile is saved where executable is located,,,,,プロファイルは実行可能ファイルが配置されている場所に保存されます
+Install for current windows account,Install for current windows account,,,,,現在のWindowsアカウント用にインストール
+Profile is saved in your Windows AppData folder,Profile is saved in your Windows AppData folder,,,,,プロファイルはWindowsAppDataフォルダーに保存されます
